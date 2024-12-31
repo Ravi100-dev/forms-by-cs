@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background:#097962
+}
+fieldset{
+    width: 500px;
+    border: 5px solid black;
+    border-radius: 25px; 
+}
+input:required{
+    border:5px solid red
+}
+input:optional{
+    border:2px dashed  orange;
+}
+input[readonly]
+{
+    background-color: rgb(205,241,0);
+    color:black;
+    font-weight:90;
+}
+select{
+    background-color: purple;
+border-radius: 10px;
+font-size: 20px;
+width: 200px;
+color: bisque;
+cursor: pointer;
+}
+
+input[type="radio"]:checked{
+height: 40px;
+width: 40px;
+}
+input[type="radio"]:checked + label{
+    color:red;
+    font-size: 20px;
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<h1>Course Registration Form</h1>                       
+ <form action="">
+ <fieldset>
+    <legend>Personal details</legend>
+    <table>
+    <tr>
+        <td> <label for=""> First Name</label></td>
+         <td><input type="text" placeholder="EX:DARSHU" maxlength="10" required/><br/></td>
+    </tr>
+
+    <tr>
+<td><label for="">Surname</label></td>
+<td><input type="text" name="LN" placeholder="EX:T"/><br/></td>
+    </tr>
+
+    <tr>
+<td><label for="">Mobile Number</label></td>
+<td> <input type="tel" name="mob" placeholder="EX:9988776655" required><br/></td>
+    </tr>
+
+    <tr>
+<td><label for="">Email</label></td>
+<td> <input type="email" name="mail" placeholder="EX:exmp@gmail.com" required><br/></td>
+    </tr>
+
+    <tr>
+<td> <label for="">Password</label></td>
+<td>  <input type="Password" name="pwd" placeholder="EX:Min 5 characters" required></td>
+    </tr>
+
+    <tr>
+<td> <label for="">Confirm Password</label></td>
+<td> <input type="Password" name="cpwd" placeholder="EX:Min 5 characters"><br></td>
+    </tr>
+
+    <tr>
+<td> <label for="">DOB</label></td>
+<td> <input type="Date"><br></td>
+    </tr>
+
+    <tr>
+<td>  <label for="">Gender</label></td>
+<td>
+     <input type="radio" name="gender" value="M" /><label
+     >Male</label> 
+     <input type="radio" name="gender" value="F" /><label
+     >Female</label>
+    <input type="radio" name="gender" value="O"/><label
+    >Others</label>
+</td>
+   </tr>
+
+   <tr>
+<td><label for="">Select Country</label></td>
+ <td> <select>
+    <option value="">INDIA</option>
+    <option value="">USA</option>
+    <option value="">UK</option>
+    <option value="">CHINA</option>
+    <option value="">AUSTRALIA</option>
+    <option value="">JAPAN</option>
+    </select></td>
+</tr>
+
+<tr>
+<td> <label for="">Upload Image</label></td>
+<td> <input type="file" /> <br /></td>
+</tr>
+
+<tr>
+    <td> <input type="reset"/> </td>
+    </tr>
+</table>
+</fieldset>
+
+ <fieldset>
+    <legend>Course details</legend>
+    <legend>Select course</legend>
+    <select name="Course" >
+        <option value="PES">Python full stack</option>
+        <option value="JFS">Java full stack</option>
+        <option value="CJ">Core java</option>
+        <option value="PDS">Python for data science</option>
+        </select><br>
+        <label for=>INSTITUTE NAME</label>
+        <input type="text" value="TAP ACADEMY" readonly/><br/>
+        <label >Delivery mode</label>
+        <input type="radio" name="mode1" value="ON">ONLINE
+        <input type="radio" name="mode1"value="OFF">OFFLINE<br>
+        <label for>comments</label><br>
+        <textarea rows="4" cols="40"></textarea>
+ </fieldset> 
+ <input type="Submit" name="" id="">   
+</form>
